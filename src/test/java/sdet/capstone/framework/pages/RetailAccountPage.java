@@ -19,7 +19,7 @@ public class RetailAccountPage extends BaseSetup {
 	@ FindBy (id ="nameInput")
 	public WebElement nameInput;
 	
-	@FindBy (id="phoneNumberInput")
+	@FindBy (id="personalPhoneInput")
 	public WebElement phoneInput;
 	
 	@FindBy (id="personalUpdateBtn")
@@ -104,6 +104,7 @@ public class RetailAccountPage extends BaseSetup {
     
     
     //Add Address 
+    
     @FindBy (xpath="//div[@class='account__address-new']")
     public WebElement addNewAddress;
     @FindBy (id ="countryDropdown")

@@ -25,9 +25,11 @@ public class RetailAccountSteps extends CommonUtility {
 	
 	@And("User update Name {string} and Phone {string}")
 	public void userUpdateNameNameValueAndPhonePhoneValue(String name, String phone) {
+		clearTextUsingSendKeys(factory.accountPage().nameInput);
 		sendText(factory.accountPage().nameInput, name);
+		clearTextUsingSendKeys(factory.accountPage().phoneInput);
 		sendText(factory.accountPage().phoneInput, phone);
-		logger.info("User Entered Name and Phone Number");
+		logger.info("User updated Name and Phone");
 		
 	}
 	
@@ -39,6 +41,7 @@ public class RetailAccountSteps extends CommonUtility {
 	@Then("User profile information should be updated")
 	public void UserProfileInformationShouldBeUpdated() {
 		waitTillPresence(factory.accountPage().successUpdate);
+		Assert.assertTrue(isElementDisplayed(factory.accountPage().successUpdate));
 		logger.info("Information is updated and user can see the Successfull update message");
 	}
 	

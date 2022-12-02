@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.junit.Assert;
+import org.openqa.selenium.By;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
@@ -42,48 +43,54 @@ public class HomeSteps extends CommonUtility {
 	}
 
 //sidebaroutline
+	/*
+	 * @When("User on {string}") public void userOn(String department) {
+	 * selectByVisibleText(factory.homePage().shopByAllDepartments, department);
+	 * logger.info("user is on department"); }
+	 * 
+	 * @Then("these options are present in department") public void
+	 * theseOptionsArePresentInDepartmentAnd() {
+	 * 
+	 * 
+	 * if (isElementDisplayed(factory.homePage().tvandVideo)) {
+	 * logger.info("tvand video"); } else if
+	 * (isElementDisplayed(factory.homePage().videoGames)) {
+	 * logger.info("video games"); } else if
+	 * (isElementDisplayed(factory.homePage().accessories)) {
+	 * logger.info("accessories"); } else if
+	 * (isElementDisplayed(factory.homePage().networking)) {
+	 * logger.info("smart Home Lighting"); } else if
+	 * (isElementDisplayed(factory.homePage().smartHomeLightning)) {
+	 * logger.info("smart Home Lighting"); } else if
+	 * (isElementDisplayed(factory.homePage().plugsandOutlets)) {
+	 * logger.info("plugs and outlets"); } else if
+	 * (isElementDisplayed(factory.homePage().athleticClothing)) {
+	 * logger.info("athleticClothing"); } else if
+	 * (isElementDisplayed(factory.homePage().exerciseFitness)) {
+	 * logger.info("exerciese Fitness"); } else if
+	 * (isElementDisplayed(factory.homePage().automative)) {
+	 * logger.info("automative"); } else if
+	 * (isElementDisplayed(factory.homePage().motorCyclePowersports)) {
+	 * logger.info("motorCyclePowersports"); } }
+	 */
+
 	@When("User on {string}")
-	public void userOn(String department) {
-		selectByVisibleText(factory.homePage().shopByAllDepartments, department);
-		logger.info("user is on department");
+	public void userOnDepartment(String department) {
+		clickElementWithJS(getDriver().findElement(
+				By.xpath("//div[@class = 'sidebar_content-item']//child::span[text() = '" + department + "']")));
+		logger.info("user clicked on department " + department + " option");
 	}
 
-	@Then("these options are present in department {string} and {string}")
-	public void theseOptionsArePresentInDepartmentAnd(String string1, String string2) {
-		selectByVisibleText(factory.homePage().sideBarContent, string1);
-		selectByVisibleText(factory.homePage().sideBarContent, string2);
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().tvandVideo));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().videoGames));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().accessories));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().networking));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().smartHomeLightning));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().plugsandOutlets));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().athleticClothing));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().exerciseFitness));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().automative));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().motorCyclePowersports));
-		logger.info("side button");
+	@Then("below options are present in department")
+	public void belowOptionsArePresentInDepartment(DataTable data) {
+		List<List<String>> options = data.asLists(String.class);
+		Assert.assertTrue(isElementDisplayed(getDriver().findElement(By.xpath(
+				"//div[@class = 'sidebar_content-item']//child::span[text() = '" + options.get(0).get(0) + "']"))));
+		Assert.assertTrue(isElementDisplayed(getDriver().findElement(By.xpath(
+				"//div[@class = 'sidebar_content-item']//child::span[text() = '" + options.get(0).get(1) + "']"))));
+		logger.info("options are present in department");
+
 	}
-//	@When("User on {string}")
-//	public void userOnDepartment(String department) {
-//		selectByVisibleText(factory.homePage().shopByAllDepartments, department);
-//		logger.info("user on department");
-//	}
-//
-//	@Then("below options are present in department")
-//	public void belowOptionsArePresentInDepartment() {
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().tvandVideo));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().videoGames));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().accessories));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().networking));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().smartHomeLightning));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().plugsandOutlets));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().athleticClothing));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().exerciseFitness));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().automative));
-//		Assert.assertTrue(isElementDisplayed(factory.homePage().motorCyclePowersports));
-//		logger.info("options are present in department");
-//	}
 
 //@AddItemToCart
 	@When("User change the category to {string}")

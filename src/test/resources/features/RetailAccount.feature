@@ -6,14 +6,14 @@ Feature: Retail Account Page
     And User enter email 'atiqi@gmail.com' and password 'Atiqi!11'
     And User click on login button
     And User should be logged in into Account
-
+  @updateProfile
   Scenario: Verify User can update Profile Information
     When User click on Account option
-    And User update Name 'atiqijan' and Phone '9169174324'
+    And User update Name 'atiqi jan' and Phone '9169174324'
     And User click on Update button
     Then User profile information should be updated
 
-  #@passwordsteps
+  @passwordsteps
   Scenario: Verify User can Update password
     When User click on Account option
     And User enter below information

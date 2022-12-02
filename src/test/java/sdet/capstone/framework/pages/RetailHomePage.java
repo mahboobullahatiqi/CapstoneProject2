@@ -32,8 +32,13 @@ public class RetailHomePage extends BaseSetup {
     
     //Department Sidebar outline 
     
-    @FindBy(id="contentHeader")
+    @FindBy(xpath="//div[@class = 'sidebar_content-item']//child::span[text() = '\" + department + \"']\"")
      public WebElement shopByAllDepartments;
+    
+    @FindBy(xpath="//span[text()='Electronics']")
+    public WebElement electronicsdepartment;
+    
+    //
     
     @FindBy (xpath="//div[@class='sidebar_content-item']")
     public WebElement sideBarContent;
