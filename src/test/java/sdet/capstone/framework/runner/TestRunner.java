@@ -7,7 +7,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        tags = "@DepartmentSideBarOutline",
+        tags = "@EditAddress",
         features = ("classpath:features"),
         glue="sdet.capstone.framework",
         dryRun = false,

@@ -45,12 +45,13 @@ public class HomeSteps extends CommonUtility {
 //sidebaroutline
 	/*
 	 * @When("User on {string}") public void userOn(String department) {
-	 * selectByVisibleText(factory.homePage().shopByAllDepartments, department);
-	 * logger.info("user is on department"); }
+	 * clickElementWithJS(getDriver().findElement(
+	 * By.xpath("//div[@class = 'sidebar_content-item']//child::span[text() = '" +
+	 * department + "']"))); logger.info("user clicked on department " + department
+	 * + " option"); }
 	 * 
 	 * @Then("these options are present in department") public void
 	 * theseOptionsArePresentInDepartmentAnd() {
-	 * 
 	 * 
 	 * if (isElementDisplayed(factory.homePage().tvandVideo)) {
 	 * logger.info("tvand video"); } else if
@@ -76,6 +77,7 @@ public class HomeSteps extends CommonUtility {
 
 	@When("User on {string}")
 	public void userOnDepartment(String department) {
+
 		clickElementWithJS(getDriver().findElement(
 				By.xpath("//div[@class = 'sidebar_content-item']//child::span[text() = '" + department + "']")));
 		logger.info("user clicked on department " + department + " option");

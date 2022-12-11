@@ -6,6 +6,7 @@ Feature: Retail Account Page
     And User enter email 'atiqi@gmail.com' and password 'Atiqi!11'
     And User click on login button
     And User should be logged in into Account
+
   @updateProfile
   Scenario: Verify User can update Profile Information
     When User click on Account option
@@ -66,9 +67,9 @@ Feature: Retail Account Page
   Scenario: Verify User can edit an Address added on account
     When User click on Account option
     And User click on edit address option
-    And user fill new address form with below information
-      | country       | fullName | phoneNumber | streetAddress  | apt | city    | state  | zipCode |
-      | United States | Benjamin |  9164774131 | Lission Street | 107 | Iliones | Oregon |   95822 |
+    And User fill new address form with below information
+      | country       | fullName      | phoneNumber      | streetAddress       | apt      | city     | state      | zipCode      |
+      | United States | fullNameValue | phoneNumberValue | streeetAddressValue | aptValue | cityValue | stateValue | zipCodeValue |
     And User click update Your Address button
     Then a message should be displayed 'Address Updated Successfully'
 

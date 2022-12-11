@@ -2533,3 +2533,76 @@
 2022-12-01 17:28:39,344 [main] INFO logger_File - user clicked on All section
 2022-12-01 17:28:39,374 [main] INFO logger_File - user clicked on department Automative option
 2022-12-01 17:28:39,427 [main] INFO logger_File - options are present in department
+2022-12-01 17:39:03,061 [main] INFO logger_File - React Appis equal toReact App
+2022-12-01 17:39:03,239 [main] INFO logger_File - user clicked on All section
+2022-12-01 17:39:03,285 [main] INFO logger_File - user clicked on department Electronics option
+2022-12-01 17:39:06,070 [main] INFO logger_File - React Appis equal toReact App
+2022-12-01 17:39:06,235 [main] INFO logger_File - user clicked on All section
+2022-12-01 17:39:06,265 [main] INFO logger_File - user clicked on department Computers option
+2022-12-01 17:39:09,259 [main] INFO logger_File - React Appis equal toReact App
+2022-12-01 17:39:09,398 [main] INFO logger_File - user clicked on All section
+2022-12-01 17:39:09,438 [main] INFO logger_File - user clicked on department Smart Home option
+2022-12-01 17:39:13,953 [main] INFO logger_File - React Appis equal toReact App
+2022-12-01 17:39:14,099 [main] INFO logger_File - user clicked on All section
+2022-12-01 17:39:14,192 [main] INFO logger_File - user clicked on department Sports option
+2022-12-01 17:39:19,148 [main] INFO logger_File - React Appis equal toReact App
+2022-12-01 17:39:19,287 [main] INFO logger_File - user clicked on All section
+2022-12-01 17:39:19,314 [main] INFO logger_File - user clicked on department Automative option
+2022-12-01 19:38:36,488 [main] INFO logger_File - React Appis equal toReact App
+2022-12-01 19:38:36,688 [main] INFO logger_File - user clicked on All section
+2022-12-01 19:39:06,911 [main] INFO logger_File - React Appis equal toReact App
+2022-12-01 19:39:07,063 [main] INFO logger_File - user clicked on All section
+2022-12-01 19:39:31,564 [main] INFO logger_File - React Appis equal toReact App
+2022-12-01 19:39:31,704 [main] INFO logger_File - user clicked on All section
+2022-12-01 19:39:55,534 [main] INFO logger_File - React Appis equal toReact App
+2022-12-01 19:39:55,690 [main] INFO logger_File - user clicked on All section
+2022-12-01 19:40:35,684 [main] INFO logger_File - React Appis equal toReact App
+2022-12-01 19:40:35,862 [main] INFO logger_File - user clicked on All section
+2022-12-01 19:40:35,909 [main] INFO logger_File - user clicked on department Electronics option
+2022-12-01 19:40:35,979 [main] INFO logger_File - options are present in department
+2022-12-01 19:40:38,705 [main] INFO logger_File - React Appis equal toReact App
+2022-12-01 19:40:38,871 [main] INFO logger_File - user clicked on All section
+2022-12-01 19:40:38,904 [main] INFO logger_File - user clicked on department Computers option
+2022-12-01 19:40:38,966 [main] INFO logger_File - options are present in department
+2022-12-01 19:40:43,451 [main] INFO logger_File - React Appis equal toReact App
+2022-12-01 19:40:43,608 [main] INFO logger_File - user clicked on All section
+2022-12-01 19:40:43,651 [main] INFO logger_File - user clicked on department Smart Home option
+2022-12-01 19:40:43,723 [main] INFO logger_File - options are present in department
+2022-12-01 19:40:48,384 [main] INFO logger_File - React Appis equal toReact App
+2022-12-01 19:40:48,531 [main] INFO logger_File - user clicked on All section
+2022-12-01 19:40:48,572 [main] INFO logger_File - user clicked on department Sports option
+2022-12-01 19:40:48,620 [main] INFO logger_File - options are present in department
+2022-12-01 19:40:51,672 [main] INFO logger_File - React Appis equal toReact App
+2022-12-01 19:40:51,898 [main] INFO logger_File - user clicked on All section
+2022-12-01 19:40:51,930 [main] INFO logger_File - user clicked on department Automative option
+2022-12-01 19:40:51,988 [main] INFO logger_File - options are present in department
+2022-12-07 12:01:02,434 [main] INFO logger_File - React Appis equal toReact App
+2022-12-07 12:01:02,626 [main] INFO logger_File - user clicked on Sign in option
+2022-12-07 12:01:02,891 [main] INFO logger_File - user entered emailatiqi@gmail.comand user entered passwordAtiqi!11
+2022-12-07 12:01:02,980 [main] INFO logger_File - user clicked on login button
+2022-12-07 12:01:04,758 [main] INFO logger_File - user logged in into account and the tekSchool logo is displayed and account option is displayd
+2022-12-07 12:01:04,911 [main] INFO logger_File - User clicked on Account option
+2022-12-07 12:01:05,541 [main] INFO logger_File - user clicked Edit Address Button and remove existing data one by one
+2022-12-07 12:01:57,699 [main] INFO logger_File - React Appis equal toReact App
+2022-12-07 12:01:57,823 [main] INFO logger_File - user clicked on Sign in option
+2022-12-07 12:01:58,051 [main] INFO logger_File - user entered emailatiqi@gmail.comand user entered passwordAtiqi!11
+2022-12-07 12:01:58,131 [main] INFO logger_File - user clicked on login button
+2022-12-07 12:01:58,547 [main] INFO logger_File - user logged in into account and the tekSchool logo is displayed and account option is displayd
+2022-12-07 12:01:58,676 [main] INFO logger_File - User clicked on Account option
+2022-12-07 12:01:59,424 [main] INFO logger_File - user clicked Edit Address Button and remove existing data one by one
+2022-12-07 12:02:00,183 [main] INFO logger_File - user clicked on updated address 
+2022-12-07 12:02:00,853 [main] INFO logger_File - successfull message is displayed
+2022-12-08 22:51:07,673 [main] INFO logger_File - React Appis equal toReact App
+2022-12-08 22:51:07,974 [main] INFO logger_File - user clicked on Sign in option
+2022-12-08 22:51:08,325 [main] INFO logger_File - user entered emailatiqi@gmail.comand user entered passwordAtiqi!11
+2022-12-08 22:51:08,458 [main] INFO logger_File - user clicked on login button
+2022-12-08 22:51:09,010 [main] INFO logger_File - user logged in into account and the tekSchool logo is displayed and account option is displayd
+2022-12-08 22:51:09,383 [main] INFO logger_File - User clicked on Account option
+2022-12-08 22:51:10,583 [main] INFO logger_File - user clicked Edit Address Button and remove existing data one by one
+2022-12-08 23:09:55,514 [main] INFO logger_File - React Appis equal toReact App
+2022-12-08 23:09:55,835 [main] INFO logger_File - user clicked on Sign in option
+2022-12-08 23:09:56,252 [main] INFO logger_File - user entered emailatiqi@gmail.comand user entered passwordAtiqi!11
+2022-12-08 23:09:56,422 [main] INFO logger_File - user clicked on login button
+2022-12-08 23:09:57,474 [main] INFO logger_File - user logged in into account and the tekSchool logo is displayed and account option is displayd
+2022-12-08 23:09:57,917 [main] INFO logger_File - User clicked on Account option
+2022-12-08 23:09:59,359 [main] INFO logger_File - user clicked Edit Address Button and remove existing data one by one
